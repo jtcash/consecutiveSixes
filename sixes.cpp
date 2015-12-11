@@ -13,10 +13,7 @@ THREAD_MAX : thread::hardware_concurrency();
 #else
   const long nt = thread::hardware_concurrency();
 #endif
-
 void printRate(long nums, double seconds); // Print the formatted rate
-
-volatile long curr = 0;
 
 // Checks for 3 and no more 6s in a row somewhere
 bool checkSix(long x){
